@@ -2,6 +2,8 @@
    Kaul & Associates – Shared Stylesheet
    ============================================================ */
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap');
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -16,8 +18,8 @@
   --border: #DDE3EC;
   --radius: 8px;
   --shadow: 0 2px 16px rgba(27,58,92,.10);
-  --font:   'Segoe UI', system-ui, -apple-system, sans-serif;
-  --serif:  Georgia, 'Times New Roman', serif;
+  --font:   'DM Sans', system-ui, -apple-system, sans-serif;
+  --serif:  'DM Serif Display', Georgia, serif;
   --max:    1100px;
   --nav-h:  68px;
 }
