@@ -375,6 +375,10 @@ nav {
   font-size: .82rem;
   letter-spacing: .05em;
   text-transform: uppercase;
+  position: sticky;
+  top: calc(var(--nav-h) + 0.75rem);
+  z-index: 2;
+  box-shadow: 0 3px 8px rgba(0,0,0,.18);
 }
 
 .client-table td {
@@ -387,6 +391,98 @@ nav {
 .client-table tr:last-child td { border-bottom: none; }
 
 .client-table tr:nth-child(even) td { background: var(--light); }
+
+.client-table th.col-sno,
+.client-table td.col-sno { width: 5rem; text-align: center; vertical-align: top; }
+
+.client-table th:nth-child(2),
+.client-table td:nth-child(2) { width: 30%; }
+
+.client-table th:last-child,
+.client-table td:last-child { width: auto; white-space: normal; }
+
+.client-table .services-header {
+  display: flex;
+  gap: 1.5rem;
+}
+.client-table .services-header span:first-child {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.client-table .text-muted { color: var(--muted); }
+
+.client-org-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+}
+.client-logo {
+  width: 4.125rem;
+  height: 4.125rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: .25rem;
+}
+.client-logo-fallback {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: rgba(27,58,92,.08);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .65rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.client-table td:nth-child(2) strong:nth-of-type(2) {
+  display: inline-block;
+  background: rgba(27,58,92,.1);
+  color: var(--navy);
+  border-radius: 4px;
+  padding: .15rem .5rem;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  margin: .3rem 0 .15rem;
+}
+
+.nested-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nested-table td {
+  padding: .35rem 0;
+  font-size: .875rem;
+  vertical-align: top;
+  line-height: 1.5;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+.nested-table tr:last-child td { border-bottom: none; }
+.nested-table td:first-child {
+  width: 40%;
+  padding-right: 1.5rem;
+  font-weight: 600;
+  color: var(--navy);
+  white-space: nowrap;
+}
+.nested-table td:last-child {
+  white-space: normal;
+}
+.nested-table td { background: transparent !important; }
 
 .tag {
   display: inline-block;
