@@ -1,203 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact – Kaul & Associates</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="nav-brand" href="index.html">Kaul & Associates</a>
-    <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Kaul & Associates</a>
+      <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="eyebrow">Get in Touch</p>
+      <h1>Contact Kaul & Associates</h1>
+      <p>Tell us about your manufacturing challenges. We'll respond with how we can help.</p>
+    </div>
+  </div>
+
+  <!-- Contact Content -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <div class="contact-item">
+            <div class="ci-icon">&#128205;</div>
+            <p>
+              <strong>Kaul & Associates</strong>
+              Villa 45, Avenue 15<br>
+              Palm Meadows, Phase 1, Whitefield<br>
+              Bangalore – 560066<br>
+              Karnataka, India<br>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">&#128222;</div>
+            <p>
+              <strong>Telephone</strong>
+              +91-9972098145
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">&#9993;</div>
+            <p>
+              <strong>Email</strong>
+              <a href="mailto:vinay@kaulassociates.com" style="color:var(--navy);">vinay@kaulassociates.com</a>
+            </p>
+          </div>
+
+          <div style="margin-top:2.5rem;">
+            <h3 style="margin-bottom:1.25rem;">Individual Consultants</h3>
+
+            <div class="contact-item">
+              <div class="ci-icon" style="font-size:1rem;background:rgba(27,58,92,.08);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--navy);">VK</div>
+              <p>
+                <strong>Vinay Kaul</strong> — Founder &amp; Principal
+                <a href="mailto:vinay@kaulassociates.com" style="color:var(--muted);font-size:.85rem;display:block;">vinay@kaulassociates.com</a>
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <div class="ci-icon" style="font-size:.85rem;background:rgba(27,58,92,.08);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--navy);">SP</div>
+              <p>
+                <strong>Aarti Ganesh</strong> — Senior Consultant
+                <a href="mailto:aarti@kaulassociates.com" style="color:var(--muted);font-size:.85rem;display:block;">aarti@kaulassociates.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem;padding:1.5rem;background:var(--light);border-radius:var(--radius);border-left:4px solid var(--gold);">
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7;">
+              <strong style="color:var(--navy);">Areas we serve:</strong><br>
+              Lean Manufacturing &bull; Six Sigma &bull; Supply Chain Management<br><br>
+              <strong style="color:var(--navy);">Industries:</strong><br>
+              Aerospace &bull; Automotive &bull; Consumer Electronics &bull; Capital Equipment &bull; Energy &bull; Textiles &bull; Process Industries
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div>
+          <h3 style="color:var(--navy);font-size:1.05rem;margin-bottom:1.5rem;">Send Us a Message</h3>
+          <form>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Arjun" />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Sharma" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="arjun@company.com" />
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Organisation</label>
+              <input type="text" id="company" name="company" placeholder="Your company name" />
+            </div>
+            <div class="form-group">
+              <label for="interest">Area of Interest</label>
+              <select id="interest" name="interest">
+                <option value="" disabled selected>Select a service area</option>
+                <option>Lean Manufacturing</option>
+                <option>Six Sigma</option>
+                <option>Supply Chain Management</option>
+                <option>Process Audit</option>
+                <option>Training Programme</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Briefly describe your manufacturing challenge or what you'd like to discuss..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Work With Us -->
+  <section class="section section-alt">
+    <div class="container" style="text-align:center;">
+      <p class="section-label">Why Kaul & Associates</p>
+      <h2 class="section-title">What to Expect When You Reach Out</h2>
+      <div class="divider" style="margin:1rem auto 2.5rem;"></div>
+
+      <div class="card-grid card-grid-3">
+        <div class="card" style="text-align:left;">
+          <div class="card-icon">&#128337;</div>
+          <h3>Quick Response</h3>
+          <p>We respond to all enquiries promptly and personally — you will speak directly with a principal consultant, not a sales team.</p>
+        </div>
+        <div class="card" style="text-align:left;">
+          <div class="card-icon">&#128203;</div>
+          <h3>No-Obligation Discussion</h3>
+          <p>Our first conversation is a genuine exchange to understand your situation. We'll tell you candidly whether and how we can help.</p>
+        </div>
+        <div class="card" style="text-align:left;">
+          <div class="card-icon">&#128736;</div>
+          <h3>Custom Proposal</h3>
+          <p>If we're a good fit, we'll design a proposal specific to your organisation's needs — not a pre-packaged programme pulled from a catalogue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <ul class="footer-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="case-studies.html">Case Studies</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </div>
-</nav>
-
-<div class="page-header">
-  <div class="page-header-inner">
-    <p class="eyebrow">Get in Touch</p>
-    <h1>Contact Kaul & Associates</h1>
-    <p>Tell us about your manufacturing challenges. We'll respond with how we can help.</p>
-  </div>
-</div>
-
-<!-- Contact Content -->
-<section class="section">
-  <div class="container">
-    <div class="contact-grid">
-
-      <!-- Left: Contact Info -->
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-
-        <div class="contact-item">
-          <div class="ci-icon">&#128205;</div>
-          <p>
-            <strong>Kaul & Associates</strong>
-            11/A, III Main, Kodihalli Extension<br>
-            HAL II Stage<br>
-            Bangalore 560 008<br>
-            Karnataka, India
-          </p>
-        </div>
-
-        <div class="contact-item">
-          <div class="ci-icon">&#128222;</div>
-          <p>
-            <strong>Telephone &amp; Fax</strong>
-            +91 080 2525 3520
-          </p>
-        </div>
-
-        <div class="contact-item">
-          <div class="ci-icon">&#9993;</div>
-          <p>
-            <strong>Email</strong>
-            <a href="mailto:vinay@kaulassociates.com" style="color:var(--navy);">vinay@kaulassociates.com</a>
-          </p>
-        </div>
-
-        <div style="margin-top:2.5rem;">
-          <h3 style="margin-bottom:1.25rem;">Individual Consultants</h3>
-
-          <div class="contact-item">
-            <div class="ci-icon" style="font-size:1rem;background:rgba(27,58,92,.08);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--navy);">VK</div>
-            <p>
-              <strong>Vinay Kaul</strong> — Founder &amp; Principal
-              <a href="mailto:vinay@kaulassociates.com" style="color:var(--muted);font-size:.85rem;display:block;">vinay@kaulassociates.com</a>
-            </p>
-          </div>
-
-          <div class="contact-item">
-            <div class="ci-icon" style="font-size:.85rem;background:rgba(27,58,92,.08);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--navy);">SP</div>
-            <p>
-              <strong>Seshadri Prativadi</strong> — Principal Consultant
-              <a href="mailto:seshadri_prativadi@yahoo.com" style="color:var(--muted);font-size:.85rem;display:block;">seshadri_prativadi@yahoo.com</a>
-            </p>
-          </div>
-
-          <div class="contact-item">
-            <div class="ci-icon" style="font-size:.85rem;background:rgba(27,58,92,.08);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--navy);">TK</div>
-            <p>
-              <strong>Tej K Dhar</strong> — Principal Consultant
-              <a href="mailto:tejdhar@yahoo.com" style="color:var(--muted);font-size:.85rem;display:block;">tejdhar@yahoo.com</a>
-            </p>
-          </div>
-
-          <div class="contact-item">
-            <div class="ci-icon" style="font-size:.85rem;background:rgba(27,58,92,.08);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--navy);">SS</div>
-            <p>
-              <strong>Sushma Sahayam</strong> — Associate Consultant
-              <a href="mailto:ssahayam@yahoo.com" style="color:var(--muted);font-size:.85rem;display:block;">ssahayam@yahoo.com</a>
-            </p>
-          </div>
-        </div>
-
-        <div style="margin-top:2.5rem;padding:1.5rem;background:var(--light);border-radius:var(--radius);border-left:4px solid var(--gold);">
-          <p style="font-size:.88rem;color:var(--muted);line-height:1.7;">
-            <strong style="color:var(--navy);">Areas we serve:</strong><br>
-            Lean Manufacturing &bull; Six Sigma &bull; Supply Chain Management &bull; Reliability Engineering<br><br>
-            <strong style="color:var(--navy);">Industries:</strong><br>
-            Aerospace &bull; Automotive &bull; Consumer Electronics &bull; Capital Equipment &bull; Energy &bull; Textiles &bull; Process Industries
-          </p>
-        </div>
-      </div>
-
-      <!-- Right: Contact Form -->
-      <div>
-        <h3 style="color:var(--navy);font-size:1.05rem;margin-bottom:1.5rem;">Send Us a Message</h3>
-        <form>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
-            <div class="form-group">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="fname" placeholder="Arjun" />
-            </div>
-            <div class="form-group">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname" placeholder="Sharma" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="arjun@company.com" />
-          </div>
-          <div class="form-group">
-            <label for="company">Company / Organisation</label>
-            <input type="text" id="company" name="company" placeholder="Your company name" />
-          </div>
-          <div class="form-group">
-            <label for="interest">Area of Interest</label>
-            <select id="interest" name="interest">
-              <option value="" disabled selected>Select a service area</option>
-              <option>Lean Manufacturing</option>
-              <option>Six Sigma</option>
-              <option>Supply Chain Management</option>
-              <option>Reliability Engineering</option>
-              <option>Process Audit</option>
-              <option>Training Programme</option>
-              <option>General Enquiry</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" placeholder="Briefly describe your manufacturing challenge or what you'd like to discuss..."></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Send Message</button>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Why Work With Us -->
-<section class="section section-alt">
-  <div class="container" style="text-align:center;">
-    <p class="section-label">Why Kaul & Associates</p>
-    <h2 class="section-title">What to Expect When You Reach Out</h2>
-    <div class="divider" style="margin:1rem auto 2.5rem;"></div>
-
-    <div class="card-grid card-grid-3">
-      <div class="card" style="text-align:left;">
-        <div class="card-icon">&#128337;</div>
-        <h3>Quick Response</h3>
-        <p>We respond to all enquiries promptly and personally — you will speak directly with a principal consultant, not a sales team.</p>
-      </div>
-      <div class="card" style="text-align:left;">
-        <div class="card-icon">&#128203;</div>
-        <h3>No-Obligation Discussion</h3>
-        <p>Our first conversation is a genuine exchange to understand your situation. We'll tell you candidly whether and how we can help.</p>
-      </div>
-      <div class="card" style="text-align:left;">
-        <div class="card-icon">&#128736;</div>
-        <h3>Custom Proposal</h3>
-        <p>If we're a good fit, we'll design a proposal specific to your organisation's needs — not a pre-packaged programme pulled from a catalogue.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <ul class="footer-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <p>&copy; Kaul & Associates &bull; Bangalore, India &bull; <a href="mailto:vinay@kaulassociates.com">vinay@kaulassociates.com</a></p>
-</footer>
+    <p>&copy; Kaul & Associates &bull; Bangalore, India &bull; <a href="mailto:vinay@kaulassociates.com">vinay@kaulassociates.com</a></p>
+  </footer>
 
 </body>
+
 </html>

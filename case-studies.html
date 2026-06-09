@@ -1,321 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case Studies – Kaul & Associates</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="nav-brand" href="index.html">Kaul & Associates</a>
-    <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Kaul & Associates</a>
+      <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="case-studies.html" class="active">Case Studies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="eyebrow">Our Work</p>
+      <h1>Case Studies &amp; Clients</h1>
+      <p>A track record of transforming operations across India's leading manufacturing organisations.</p>
+    </div>
+  </div>
+
+  <!-- Featured Case Studies -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Featured Engagements</p>
+      <h2 class="section-title">Selected Case Studies</h2>
+      <div class="divider"></div>
+
+      <!-- Case Study 1 -->
+      <div class="card" style="margin-bottom:1.75rem;">
+        <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
+          <div style="flex:1;min-width:240px;">
+            <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
+              <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Lean Manufacturing</span>
+              <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Aerospace</span>
+            </div>
+            <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Cellular Manufacturing — HAL Engine Division</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
+              <strong>Client:</strong> Hindustan Aeronautics Limited (HAL), Engine Division, Bangalore<br>
+              <strong>Product:</strong> Aero-engines
+            </p>
+            <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
+              HAL's Engine Division was producing critical aero-engine components in a traditional job-shop layout, resulting in long lead times, high work-in-progress inventory, and limited visibility of flow. Kaul & Associates designed and implemented a cellular manufacturing arrangement, grouping machines and people around component families. The new cells dramatically shortened the physical distance materials travelled, reduced queue times between operations, and created accountability for quality at each stage of production. Training and Kaizen workshops ensured the workforce understood and owned the new way of working.
+            </p>
+          </div>
+          <div style="min-width:200px;max-width:260px;">
+            <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
+              <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
+              <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
+                <li>Component family analysis</li>
+                <li>Cell layout design</li>
+                <li>Flow path optimisation</li>
+                <li>Operator cross-training</li>
+                <li>Kaizen workshops</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 2 -->
+      <div class="card" style="margin-bottom:1.75rem;">
+        <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
+          <div style="flex:1;min-width:240px;">
+            <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
+              <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Lean Manufacturing</span>
+              <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Energy</span>
+            </div>
+            <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Factory Layout Redesign — Tata BP Solar</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
+              <strong>Client:</strong> Tata BP Solar, Bangalore<br>
+              <strong>Product:</strong> Solar Panels
+            </p>
+            <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
+              Tata BP Solar's existing plant layout had evolved organically and created significant material handling waste, long travel distances, and production bottlenecks. Kaul & Associates conducted a systematic analysis of material flows and value streams, then designed a revised layout guided by Lean flow principles. The new arrangement aligned the physical flow of materials with the sequence of manufacturing operations, reduced handling effort, improved space utilisation, and created clearer visual management of production status across the facility.
+            </p>
+          </div>
+          <div style="min-width:200px;max-width:260px;">
+            <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
+              <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
+              <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
+                <li>Value stream mapping</li>
+                <li>Material flow analysis</li>
+                <li>Layout simulation</li>
+                <li>Visual factory design</li>
+                <li>Implementation support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 3 -->
+      <div class="card" style="margin-bottom:1.75rem;">
+        <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
+          <div style="flex:1;min-width:240px;">
+            <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
+              <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Lean + SCM</span>
+              <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Consumer Electronics</span>
+            </div>
+            <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Integrated Lean &amp; Supply Chain Transformation — BPL Group</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
+              <strong>Client:</strong> BPL Ltd, BPL Sanyo Technologies Ltd, BPL Sanyo Utilities Ltd, Bangalore<br>
+              <strong>Products:</strong> Colour Television, Audio Systems, Washing Machines
+            </p>
+            <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
+              A major multi-site engagement across BPL's consumer electronics divisions. Kaul & Associates delivered Lean Manufacturing and Supply Chain &amp; Logistics improvements simultaneously, covering product development processes, customer support operations, and Voice of Customer research. The engagement built cross-functional teams capable of sustaining and extending improvements independently, and established performance measurement systems to track progress against world-class benchmarks.
+            </p>
+          </div>
+          <div style="min-width:200px;max-width:260px;">
+            <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
+              <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
+              <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
+                <li>Lean manufacturing rollout</li>
+                <li>Supply chain redesign</li>
+                <li>Product dev process</li>
+                <li>Voice of Customer</li>
+                <li>Employee involvement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 4 -->
+      <div class="card" style="margin-bottom:1.75rem;">
+        <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
+          <div style="flex:1;min-width:240px;">
+            <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
+              <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Lean Manufacturing</span>
+              <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Capital Equipment</span>
+            </div>
+            <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Master Plant layout — Sulzer Pumps</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
+              <strong>Client:</strong> Sulzer Pumps, Mumbai<br>
+              <strong>Products:</strong> High performance pumps
+            </p>
+            <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
+              Implemented a suite of Lean interventions — Make to Order flow, Master Plant Layout with Cellular Design, and a Pull System with Heijunka — to transform manufacturing operations for high-performance pumps. The programme tripled output from the same facility (₹90 Cr to ₹270 Cr), improved on-time delivery from 55% to 90%, and optimised resource utilisation while significantly reducing inventory levels.
+            </p>
+          </div>
+          <div style="min-width:200px;max-width:260px;">
+            <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
+              <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
+              <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
+                <li>Lean – Make to Order</li>
+                <li>Master Plant Layout</li>
+                <li>Cellular Design</li>
+                <li>Pull System with Heijunka</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 5 -->
+      <div class="card" style="margin-bottom:1.75rem;">
+        <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
+          <div style="flex:1;min-width:240px;">
+            <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
+              <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Lean Manufacturing</span>
+              <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Fabrication</span>
+            </div>
+            <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Plant layout and Planning system — Technocraft Industries</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
+              <strong>Client:</strong> Technocraft Industries, Murbad<br>
+              <strong>Products:</strong> Scaffolding systems
+            </p>
+            <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
+              Redesigned the plant layout and overhauled the production planning system for a scaffolding manufacturer operating under significant capacity and space constraints. The new layout eliminated congestion and non-value-added movement, while the planning system brought discipline and predictability to scheduling. Output tripled with no increase in manpower or floor space, and on-time delivery improved from 40% to 95%. A TPM programme is currently underway to sustain equipment reliability and build on these gains.
+            </p>
+          </div>
+          <div style="min-width:200px;max-width:260px;">
+            <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
+              <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
+              <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
+                <li>New Plant Layout</li>
+                <li>Production Planning System</li>
+                <li>TPM (in progress)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 6 -->
+      <div class="card" style="margin-bottom:1.75rem;">
+        <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
+          <div style="flex:1;min-width:240px;">
+            <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
+              <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Lean Manufacturing</span>
+              <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Industrial products</span>
+            </div>
+            <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Lean Transformation — Flow Link Systems</h3>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
+              <strong>Client:</strong> Flow Link Systems, Coimbatore<br>
+              <strong>Products:</strong> Control Valves for Oil &amp; Gas
+            </p>
+            <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
+              Delivered a comprehensive Lean transformation for a precision valve manufacturer supplying the oil and gas sector. A redesigned plant layout and a new Lean Planning System together lifted output from ₹100 Cr to ₹155 Cr within twelve months and moved the business from breakeven to ₹12 Cr profit. SMED implementation cut CNC machine setup times from 60 minutes to 10 minutes, freeing significant capacity, while Lean Transport Solutions streamlined internal material handling across the facility. On-time delivery improved from 35% to 95%.
+            </p>
+          </div>
+          <div style="min-width:200px;max-width:260px;">
+            <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
+              <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
+              <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
+                <li>Plant Layout Redesign</li>
+                <li>Lean Planning System</li>
+                <li>SMED</li>
+                <li>Lean Transport Solutions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Client List -->
+  <section class="section section-alt">
+    <div class="container">
+      <p class="section-label">Client Portfolio</p>
+      <h2 class="section-title">All Engagements</h2>
+      <div class="divider"></div>
+      <p class="section-intro">A complete overview of Kaul & Associates' client engagements across sectors and service lines.</p>
+
+      <div style="overflow-x:auto;margin-top:2rem;">
+        <table class="client-table">
+          <thead>
+            <tr>
+              <th>Client Organisation</th>
+              <th>Location</th>
+              <th>Sector / Product</th>
+              <th>Services Delivered</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BPL Ltd</strong></td>
+              <td>Bangalore</td>
+              <td>Colour Television</td>
+              <td>
+                <span class="tag">Lean</span>
+                <span class="tag">Supply Chain</span>
+                <span class="tag">Product Dev</span>
+                <span class="tag">Customer Support</span>
+                <span class="tag">VoC</span>
+                <span class="tag">Employee Involvement</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>BPL Sanyo Technologies Ltd</strong></td>
+              <td>Bangalore</td>
+              <td>Audio Systems</td>
+              <td>
+                <span class="tag">Lean</span>
+                <span class="tag">Supply Chain</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>BPL Sanyo Utilities Ltd</strong></td>
+              <td>Bangalore</td>
+              <td>Washing Machines</td>
+              <td>
+                <span class="tag">Lean</span>
+                <span class="tag">Supply Chain</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Hindustan Aeronautics Ltd</strong><br><small style="color:var(--muted);">Engine Division</small></td>
+              <td>Bangalore</td>
+              <td>Aero-Engines</td>
+              <td>
+                <span class="tag">Lean – Cellular Manufacturing</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>DGP Windsor Ltd</strong></td>
+              <td>Thane &amp; Ahmedabad</td>
+              <td>Plastic Processing Machinery</td>
+              <td>
+                <span class="tag">Lean – Pull Systems</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Premier Polytronics</strong></td>
+              <td>Coimbatore</td>
+              <td>Textile Machinery Accessories</td>
+              <td>
+                <span class="tag">Lean – Make to Order</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Sparrow Technologies Pvt Ltd</strong></td>
+              <td>Goa</td>
+              <td>Television</td>
+              <td>
+                <span class="tag">Lean</span>
+                <span class="tag">Supply Chain</span>
+                <span class="tag">TPM</span>
+                <span class="tag">TQM</span>
+                <span class="tag">Incentive Scheme</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Tata BP Solar</strong></td>
+              <td>Bangalore</td>
+              <td>Solar Panels</td>
+              <td>
+                <span class="tag">Lean – Layout Design</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Triveni Engineering &amp; Industries Ltd</strong></td>
+              <td>Bangalore &amp; Mysore</td>
+              <td>Steam &amp; Gas Turbines</td>
+              <td>
+                <span class="tag">Quality Improvement</span>
+                <span class="tag">Six Sigma</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Kar Mobiles</strong></td>
+              <td>Bangalore</td>
+              <td>Engine Valves</td>
+              <td>
+                <span class="tag">Lean</span>
+                <span class="tag">Production Planning</span>
+                <span class="tag">Incentive Scheme</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Batliboi Ltd</strong></td>
+              <td>Surat</td>
+              <td>Machine Tools</td>
+              <td>
+                <span class="tag">Lean</span>
+                <span class="tag">Quality Improvement</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--navy);padding:4rem 2rem;text-align:center;">
+    <div class="container">
+      <h2 style="font-family:var(--serif);font-size:1.9rem;color:var(--white);font-weight:400;margin-bottom:.75rem;">Ready to Become Our Next Success Story?</h2>
+      <p style="color:rgba(255,255,255,.72);font-size:1rem;max-width:520px;margin:0 auto 2rem;">Tell us about your manufacturing challenges. We'll tell you how we've solved them before.</p>
+      <a class="btn-primary" href="contact.html">Start the Conversation</a>
+    </div>
+  </section>
+
+  <footer>
+    <ul class="footer-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="case-studies.html" class="active">Case Studies</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </div>
-</nav>
-
-<div class="page-header">
-  <div class="page-header-inner">
-    <p class="eyebrow">Our Work</p>
-    <h1>Case Studies &amp; Clients</h1>
-    <p>A track record of transforming operations across India's leading manufacturing organisations.</p>
-  </div>
-</div>
-
-<!-- Featured Case Studies -->
-<section class="section">
-  <div class="container">
-    <p class="section-label">Featured Engagements</p>
-    <h2 class="section-title">Selected Case Studies</h2>
-    <div class="divider"></div>
-
-    <!-- Case Study 1 -->
-    <div class="card" style="margin-bottom:1.75rem;">
-      <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
-        <div style="flex:1;min-width:240px;">
-          <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
-            <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Lean Manufacturing</span>
-            <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Aerospace</span>
-          </div>
-          <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Cellular Manufacturing — HAL Engine Division</h3>
-          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
-            <strong>Client:</strong> Hindustan Aeronautics Limited (HAL), Engine Division, Bangalore<br>
-            <strong>Product:</strong> Aero-engines
-          </p>
-          <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
-            HAL's Engine Division was producing critical aero-engine components in a traditional job-shop layout, resulting in long lead times, high work-in-progress inventory, and limited visibility of flow. Kaul & Associates designed and implemented a cellular manufacturing arrangement, grouping machines and people around component families. The new cells dramatically shortened the physical distance materials travelled, reduced queue times between operations, and created accountability for quality at each stage of production. Training and Kaizen workshops ensured the workforce understood and owned the new way of working.
-          </p>
-        </div>
-        <div style="min-width:200px;max-width:260px;">
-          <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
-            <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
-            <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
-              <li>Component family analysis</li>
-              <li>Cell layout design</li>
-              <li>Flow path optimisation</li>
-              <li>Operator cross-training</li>
-              <li>Kaizen workshops</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Case Study 2 -->
-    <div class="card" style="margin-bottom:1.75rem;">
-      <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
-        <div style="flex:1;min-width:240px;">
-          <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
-            <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Lean Manufacturing</span>
-            <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Energy</span>
-          </div>
-          <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Factory Layout Redesign — Tata BP Solar</h3>
-          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
-            <strong>Client:</strong> Tata BP Solar, Bangalore<br>
-            <strong>Product:</strong> Solar Panels
-          </p>
-          <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
-            Tata BP Solar's existing plant layout had evolved organically and created significant material handling waste, long travel distances, and production bottlenecks. Kaul & Associates conducted a systematic analysis of material flows and value streams, then designed a revised layout guided by Lean flow principles. The new arrangement aligned the physical flow of materials with the sequence of manufacturing operations, reduced handling effort, improved space utilisation, and created clearer visual management of production status across the facility.
-          </p>
-        </div>
-        <div style="min-width:200px;max-width:260px;">
-          <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
-            <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
-            <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
-              <li>Value stream mapping</li>
-              <li>Material flow analysis</li>
-              <li>Layout simulation</li>
-              <li>Visual factory design</li>
-              <li>Implementation support</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Case Study 3 -->
-    <div class="card" style="margin-bottom:1.75rem;">
-      <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
-        <div style="flex:1;min-width:240px;">
-          <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
-            <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Lean + SCM</span>
-            <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Consumer Electronics</span>
-          </div>
-          <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Integrated Lean &amp; Supply Chain Transformation — BPL Group</h3>
-          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
-            <strong>Client:</strong> BPL Ltd, BPL Sanyo Technologies Ltd, BPL Sanyo Utilities Ltd, Bangalore<br>
-            <strong>Products:</strong> Colour Television, Audio Systems, Washing Machines
-          </p>
-          <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
-            A major multi-site engagement across BPL's consumer electronics divisions. Kaul & Associates delivered Lean Manufacturing and Supply Chain &amp; Logistics improvements simultaneously, covering product development processes, customer support operations, and Voice of Customer research. The engagement built cross-functional teams capable of sustaining and extending improvements independently, and established performance measurement systems to track progress against world-class benchmarks.
-          </p>
-        </div>
-        <div style="min-width:200px;max-width:260px;">
-          <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
-            <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
-            <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
-              <li>Lean manufacturing rollout</li>
-              <li>Supply chain redesign</li>
-              <li>Product dev process</li>
-              <li>Voice of Customer</li>
-              <li>Employee involvement</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Case Study 4 -->
-    <div class="card">
-      <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
-        <div style="flex:1;min-width:240px;">
-          <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.75rem;">
-            <span class="tag" style="background:rgba(27,58,92,.12);color:var(--navy);">Six Sigma</span>
-            <span class="tag" style="background:rgba(200,169,81,.15);color:#8a6d00;">Capital Equipment</span>
-          </div>
-          <h3 style="color:var(--navy);font-size:1.15rem;margin-bottom:.5rem;">Quality Improvement Programme — Triveni Engineering &amp; Industries</h3>
-          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem;">
-            <strong>Client:</strong> Triveni Engineering &amp; Industries Ltd, Bangalore &amp; Mysore<br>
-            <strong>Products:</strong> Steam Turbines, Gas Turbines
-          </p>
-          <p style="color:var(--muted);font-size:.93rem;line-height:1.72;">
-            Applied Six Sigma DMAIC methodology to identify and eliminate the root causes of quality defects and process variation in high-value turbine manufacturing. The programme combined statistical analysis of historical data with structured FMEA reviews and operator-led improvement projects, delivering measurable reductions in scrap, rework, and warranty costs. A core group of internal champions was trained to carry the methodology forward independently.
-          </p>
-        </div>
-        <div style="min-width:200px;max-width:260px;">
-          <div style="background:var(--light);border-radius:var(--radius);padding:1.25rem;">
-            <p style="font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.75rem;">Key Interventions</p>
-            <ul style="color:var(--text);font-size:.88rem;padding-left:1.1rem;line-height:2;">
-              <li>DMAIC projects</li>
-              <li>Statistical analysis</li>
-              <li>FMEA workshops</li>
-              <li>Process capability</li>
-              <li>Internal champion training</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Full Client List -->
-<section class="section section-alt">
-  <div class="container">
-    <p class="section-label">Client Portfolio</p>
-    <h2 class="section-title">All Engagements</h2>
-    <div class="divider"></div>
-    <p class="section-intro">A complete overview of Kaul & Associates' client engagements across sectors and service lines.</p>
-
-    <div style="overflow-x:auto;margin-top:2rem;">
-      <table class="client-table">
-        <thead>
-          <tr>
-            <th>Client Organisation</th>
-            <th>Location</th>
-            <th>Sector / Product</th>
-            <th>Services Delivered</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>BPL Ltd</strong></td>
-            <td>Bangalore</td>
-            <td>Colour Television</td>
-            <td>
-              <span class="tag">Lean</span>
-              <span class="tag">Supply Chain</span>
-              <span class="tag">Product Dev</span>
-              <span class="tag">Customer Support</span>
-              <span class="tag">VoC</span>
-              <span class="tag">Employee Involvement</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>BPL Sanyo Technologies Ltd</strong></td>
-            <td>Bangalore</td>
-            <td>Audio Systems</td>
-            <td>
-              <span class="tag">Lean</span>
-              <span class="tag">Supply Chain</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>BPL Sanyo Utilities Ltd</strong></td>
-            <td>Bangalore</td>
-            <td>Washing Machines</td>
-            <td>
-              <span class="tag">Lean</span>
-              <span class="tag">Supply Chain</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Hindustan Aeronautics Ltd</strong><br><small style="color:var(--muted);">Engine Division</small></td>
-            <td>Bangalore</td>
-            <td>Aero-Engines</td>
-            <td>
-              <span class="tag">Lean – Cellular Manufacturing</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>DGP Windsor Ltd</strong></td>
-            <td>Thane &amp; Ahmedabad</td>
-            <td>Plastic Processing Machinery</td>
-            <td>
-              <span class="tag">Lean – Pull Systems</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Premier Polytronics</strong></td>
-            <td>Coimbatore</td>
-            <td>Textile Machinery Accessories</td>
-            <td>
-              <span class="tag">Lean – Make to Order</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Sparrow Technologies Pvt Ltd</strong></td>
-            <td>Goa</td>
-            <td>Television</td>
-            <td>
-              <span class="tag">Lean</span>
-              <span class="tag">Supply Chain</span>
-              <span class="tag">TPM</span>
-              <span class="tag">TQM</span>
-              <span class="tag">Incentive Scheme</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Tata BP Solar</strong></td>
-            <td>Bangalore</td>
-            <td>Solar Panels</td>
-            <td>
-              <span class="tag">Lean – Layout Design</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Triveni Engineering &amp; Industries Ltd</strong></td>
-            <td>Bangalore &amp; Mysore</td>
-            <td>Steam &amp; Gas Turbines</td>
-            <td>
-              <span class="tag">Quality Improvement</span>
-              <span class="tag">Six Sigma</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Kar Mobiles</strong></td>
-            <td>Bangalore</td>
-            <td>Engine Valves</td>
-            <td>
-              <span class="tag">Lean</span>
-              <span class="tag">Production Planning</span>
-              <span class="tag">Incentive Scheme</span>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Batliboi Ltd</strong></td>
-            <td>Surat</td>
-            <td>Machine Tools</td>
-            <td>
-              <span class="tag">Lean</span>
-              <span class="tag">Quality Improvement</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section style="background:var(--navy);padding:4rem 2rem;text-align:center;">
-  <div class="container">
-    <h2 style="font-family:var(--serif);font-size:1.9rem;color:var(--white);font-weight:400;margin-bottom:.75rem;">Ready to Become Our Next Success Story?</h2>
-    <p style="color:rgba(255,255,255,.72);font-size:1rem;max-width:520px;margin:0 auto 2rem;">Tell us about your manufacturing challenges. We'll tell you how we've solved them before.</p>
-    <a class="btn-primary" href="contact.html">Start the Conversation</a>
-  </div>
-</section>
-
-<footer>
-  <ul class="footer-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <p>&copy; Kaul & Associates &bull; Bangalore, India &bull; <a href="mailto:vinay@kaulassociates.com">vinay@kaulassociates.com</a></p>
-</footer>
+    <p>&copy; Kaul & Associates &bull; Bangalore, India &bull; <a href="mailto:vinay@kaulassociates.com">vinay@kaulassociates.com</a></p>
+  </footer>
 
 </body>
+
 </html>
