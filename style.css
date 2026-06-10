@@ -94,7 +94,11 @@ nav {
 /* ── Hero ── */
 .hero {
   padding-top: var(--nav-h);
-  background: linear-gradient(135deg, var(--navy2) 0%, var(--navy) 60%, #1f4a78 100%);
+  background-color: var(--navy2);
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.07) 1px, transparent 1px),
+    linear-gradient(135deg, var(--navy2) 0%, var(--navy) 60%, #1f4a78 100%);
+  background-size: 28px 28px, 100% 100%;
   color: var(--white);
   text-align: center;
 }
@@ -131,6 +135,24 @@ nav {
   margin: 0 auto 2.5rem;
 }
 
+/* ── Hero headline carousel ── */
+.hero-carousel-wrap {
+  min-height: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+.hero-carousel-wrap h1 {
+  margin-bottom: 0;
+  transition: opacity 0.4s ease;
+}
+.hero-carousel-wrap h1.is-fading { opacity: 0; }
+
+@media (max-width: 768px) {
+  .hero-carousel-wrap { min-height: 10rem; }
+}
+
 .btn-primary {
   display: inline-block;
   background: var(--gold);
@@ -161,7 +183,11 @@ nav {
 /* ── Page header (non-home pages) ── */
 .page-header {
   padding-top: var(--nav-h);
-  background: linear-gradient(135deg, var(--navy2) 0%, var(--navy) 100%);
+  background-color: var(--navy2);
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.07) 1px, transparent 1px),
+    linear-gradient(135deg, var(--navy2) 0%, var(--navy) 100%);
+  background-size: 28px 28px, 100% 100%;
   color: var(--white);
   text-align: center;
   padding-bottom: 3rem;
@@ -317,6 +343,65 @@ nav {
   color: rgba(255,255,255,.70);
   margin-top: .4rem;
   letter-spacing: .04em;
+}
+
+/* ── Logo grid ── */
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem 3rem;
+  margin: 2.5rem 0;
+  padding: 2rem 2.5rem;
+  background: var(--light);
+  border-radius: var(--radius);
+}
+.logo-grid img {
+  height: 42px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(50%);
+  transition: filter .25s;
+}
+.logo-grid img:hover { filter: grayscale(0%) opacity(100%); }
+
+/* ── Pull-quote / testimonial ── */
+.pull-quote-section {
+  background: linear-gradient(135deg, var(--navy2) 0%, var(--navy) 100%);
+  padding: 4.5rem 2rem;
+  text-align: center;
+}
+.pull-quote-section .opening-mark {
+  font-family: var(--serif);
+  font-size: 4.5rem;
+  color: var(--gold);
+  line-height: .5;
+  opacity: .7;
+  display: block;
+  margin-bottom: .75rem;
+}
+.pull-quote-section blockquote {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2.5vw, 1.6rem);
+  color: var(--white);
+  line-height: 1.65;
+  font-style: italic;
+  max-width: 740px;
+  margin: 0 auto 1.5rem;
+}
+.pull-quote-section cite {
+  display: block;
+  font-style: normal;
+  font-size: .8rem;
+  color: var(--gold);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.pull-quote-inner {
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 /* ── Team cards ── */
