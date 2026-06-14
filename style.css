@@ -8,16 +8,16 @@
 
 :root {
   --navy:   #1B3A5C;
-  --navy2:  #14304F;
-  --gold:   #C8A951;
-  --gold2:  #B5943E;
-  --light:  #F4F7FB;
+  --navy2:  #0F2840;
+  --gold:   #BFA050;
+  --gold2:  #A68830;
+  --light:  #F5F3EF;
   --white:  #FFFFFF;
-  --text:   #2C3E50;
-  --muted:  #6B7280;
-  --border: #DDE3EC;
-  --radius: 8px;
-  --shadow: 0 2px 16px rgba(27,58,92,.10);
+  --text:   #1A1A1A;
+  --muted:  #6B6860;
+  --border: #E0DDD8;
+  --radius: 4px;
+  --shadow: 0 2px 12px rgba(0,0,0,.07);
   --font:   'DM Sans', system-ui, -apple-system, sans-serif;
   --serif:  'DM Serif Display', Georgia, serif;
   --max:    1100px;
@@ -30,7 +30,7 @@ body {
   font-family: var(--font);
   color: var(--text);
   background: var(--white);
-  line-height: 1.65;
+  line-height: 1.7;
   font-size: 16px;
 }
 
@@ -41,7 +41,7 @@ nav {
   background: var(--navy);
   display: flex; align-items: center;
   padding: 0 2rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,.25);
+  box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 4px 20px rgba(0,0,0,.22);
 }
 
 .nav-inner {
@@ -122,7 +122,8 @@ nav {
   font-family: var(--serif);
   font-size: clamp(2rem, 5vw, 3.2rem);
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.22;
+  letter-spacing: -.015em;
   margin-bottom: 1.25rem;
   max-width: 760px;
   margin-left: auto; margin-right: auto;
@@ -212,6 +213,7 @@ nav {
   font-family: var(--serif);
   font-size: clamp(1.75rem, 4vw, 2.6rem);
   font-weight: 400;
+  letter-spacing: -.01em;
 }
 
 .page-header p {
@@ -232,11 +234,11 @@ nav {
 }
 
 .section-label {
-  font-size: .72rem;
-  letter-spacing: .18em;
+  font-size: .70rem;
+  letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--gold2);
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: .5rem;
 }
 
@@ -256,7 +258,7 @@ nav {
 }
 
 .divider {
-  width: 48px; height: 3px;
+  width: 36px; height: 2px;
   background: var(--gold);
   margin: 1rem 0 2.5rem;
 }
@@ -280,7 +282,7 @@ nav {
   transition: box-shadow .2s, transform .2s;
 }
 
-.card:hover { box-shadow: 0 6px 28px rgba(27,58,92,.16); transform: translateY(-3px); }
+.card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.11); transform: translateY(-2px); }
 
 .card-icon {
   width: 48px; height: 48px;
